@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#container {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 300px;
+}
+
+button {
+    padding: 8px 16px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li span {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("defaultimage.jpg"); 
+    background-size: 1600px;
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+  .background-selection {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .background-selection label {
+    margin-right: 10px;
+  }
+  
+  .background-selection select {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-size: 1600px;
+  }
+  
+  .background-selection select:hover {
+    background-color: #9900FF;
+  }
+  
+  .background-selection select:focus {
+    outline: none;
+    background-color: #e6e6e6;
+  }
+  
+  .background-selection select option {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        animation: fade-in 1s ease; 
+        background-color: rgba(253, 253, 253, 0.138); 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+  
+      .header .title {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+  
+      .header h1 {
+        text-align: center;
+        margin: 0;
+        font-weight: bold; 
+        font-size: 24px; 
+        color: #333; 
+      }
+  .todo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      text-align: center; 
+      background-color: rgba(255, 0, 0, 0);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      margin-top: auto;
+      margin-bottom: auto;
+      transition: background-color 0.3s ease;
+      
+    }
+  
+  
+    .todo-container:hover {
+      background-color: rgb(166, 255, 0); 
+      cursor: pointer;
+    }
+  
+   
+    
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fade-in 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .task-item.done {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+  }
+  
+  .task-item.overdue {
+    background-color: #ffcdd2;
+  }
+  
+  .task-item .task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  .gif {
+    max-width: 100%;
+    max-height: 100%;
+    animation: fade-in 0.5s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .background-selection {
+    margin-top: 20px;
+  }
+  
+  .background-selection label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .background-selection select {
+    padding: 5px;
+  }
+  

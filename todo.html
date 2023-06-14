@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      <h1>To-Do List</h1></div>
+    
+
+   
+    <div class="background-selection">
+      <label for="background-select">Select Background:</label>
+      <select id="background-select" onchange="changeBackground()">
+        <option value="default">Default</option>
+        <option value="background1">Background 1</option>
+        <option value="background2">Background 2</option>
+        <option value="background3">Background 3</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="todo-container">
+    <div class="input-container">
+      <input type="text" id="task-input" placeholder="Enter task...">
+      <input type="datetime-local" id="date-input">
+    </div>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <ul id="task-list"></ul>
+
+  <div id="gif-container" class="hidden"></div>
+
+  <script src="todo.js">
+    
+  </script>
+</body>
+</html>
